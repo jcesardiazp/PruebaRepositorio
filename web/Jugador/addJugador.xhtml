@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create/Edit"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Idjugador:" for="idjugador" />
+                    <h:inputText id="idjugador" value="#{jugadorController.jugador.idjugador}" title="Idjugador" required="true" requiredMessage="The Idjugador field is required."/>
+                    <h:outputLabel value="Nombrejugador:" for="nombrejugador" />
+                    <h:inputText id="nombrejugador" value="#{jugadorController.jugador.nombrejugador}" title="Nombrejugador" />
+                    <h:outputLabel value="Nacionalidad:" for="nacionalidad" />
+                    <h:inputText id="nacionalidad" value="#{jugadorController.jugador.nacionalidad}" title="Nacionalidad" />
+                    <h:outputLabel value="Numjugador:" for="numjugador" />
+                    <h:inputText id="numjugador" value="#{jugadorController.jugador.numjugador}" title="Numjugador" />
+                </h:panelGrid>
+                <h:commandButton value="Crear" action="#{jugadorController.addJugador()}"></h:commandButton>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
+

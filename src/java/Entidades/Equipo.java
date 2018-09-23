@@ -113,4 +113,9 @@ public class Equipo implements Serializable {
         return "Entidades.Equipo[ numequipo=" + numequipo + " ]";
     }
     
+    public void pruebaGit(){
+    equipo.getequipo();
+        
+    }
+    
 }
